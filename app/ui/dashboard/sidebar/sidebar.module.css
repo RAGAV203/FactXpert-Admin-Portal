@@ -1,0 +1,113 @@
+/* sidebar.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 250px;
+  height: 75vh;
+  background-color: #2c3e50;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 0 30px 30px 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.userImage {
+  border-radius: 50%;
+}
+
+.userDetail {
+  margin-left: 10px;
+}
+
+.username {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.userTitle {
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.cat {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #ecf0f1;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #c0392b;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 50vh; 
+    z-index: 1000;
+    transform: translateX(-100%);
+    border-radius: 0 30px 30px 0;
+  }
+
+  .container.visible {
+    transform: translateX(0);
+    transform: translateY(25%);
+  }
+
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1100;
+    flex-direction: column;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+}

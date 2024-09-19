@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  gap: 20px; /* Reduced gap between containers */
+  margin-top: 20px;
+}
+
+.infoContainer {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--textSoft);
+}
+
+.imgContainer {
+  width: 100%;
+  max-width: 100%; /* Ensure image container doesn't exceed its parent's width */
+  height: auto; /* Automatically adjust height based on content */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 12px; /* Reduced padding for inputs */
+  border: 2px solid #2e374a;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 10px 0px;
+  font-size: 14px; /* Increased font size for better readability */
+}
+
+.form label {
+  font-size: 12px;
+  margin-bottom: 5px; /* Added margin below labels */
+}
+
+.form button {
+  padding: 12px; /* Reduced padding for buttons */
+  background-color: #0070f3;
+  color: var(--text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 14px; /* Increased font size for better readability */
+}
+
+/* Media Query for Responsive Design */
+@media (min-width: 950px) {
+  .container {
+    flex-direction: row; /* Align items horizontally on larger screens */
+    gap: 50px; /* Restored original gap between containers */
+  }
+
+  .infoContainer {
+    flex: 1; /* Maintain original flex ratio */
+    height: max-content; /* Remove fixed height */
+  }
+
+  .imgContainer {
+    width: 300px; /* Fixed width for image container on larger screens */
+    height: 300px; /* Fixed height for image container on larger screens */
+    margin-bottom: 0; /* Remove bottom margin on larger screens */
+  }
+
+  .formContainer {
+    flex: 3; /* Maintain original flex ratio */
+  }
+}

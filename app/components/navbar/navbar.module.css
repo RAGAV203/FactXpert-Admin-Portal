@@ -1,0 +1,134 @@
+/* navbar.module.css */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0070f3;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #cce7ff;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px; /* Adjust the padding for smaller screens */
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.8rem; /* Adjust the font size for smaller screens */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #c0392b;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px; /* Adjust the padding for smaller screens */
+  background-color: #57c900;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.8rem; /* Adjust the font size for smaller screens */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login:hover {
+  background-color: #54be2a;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.userImage {
+  border-radius: 50%;
+}
+
+.userDetail {
+  margin-left: 10px;
+}
+
+.username {
+  font-size: 1rem; /* Adjust the font size for smaller screens */
+  font-weight: bold;
+}
+
+.userTitle {
+  font-size: 0.8rem; /* Adjust the font size for smaller screens */
+  color: #bdc3c7;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row; /* Change back to row layout */
+    justify-content: space-between; /* Ensure items are spread out */
+  }
+  .title {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    margin: 0 auto; /* Center the title horizontally */
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logout {
+    padding: 4px 8px; /* Adjust the padding for smaller screens */
+    font-size: 0.6rem; /* Adjust the font size for smaller screens */
+  }
+
+  .login {
+    padding: 4px 8px; /* Adjust the padding for smaller screens */
+    font-size: 0.6rem; /* Adjust the font size for smaller screens */
+  }
+
+  /* Hide user details on smaller screens */
+  .user {
+    display: none;
+  }
+}
+

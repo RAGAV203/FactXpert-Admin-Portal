@@ -1,0 +1,137 @@
+/* users.module.css */
+
+.container {
+  background-color: var(--bgSoft);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc; /* Add border around the container */
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.addButton {
+  padding: 8px;
+  font-size: 14px;
+  background-color: #0070f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  font-size: 14px;
+  border-right: 1px solid #000000; 
+}
+
+.table th:last-child,
+.table td:last-child {
+  border-right: none; /* Remove right border from the last column */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.view {
+  background-color: rgb(14, 204, 90);
+}
+
+.delete {
+  background-color: crimson;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .top {
+    justify-content: space-between;
+  }
+
+  .addButton {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 12px;
+    padding: 8px;
+    max-width: 30px; /* Example: Adjust max-width as per your design */
+    white-space: nowrap; /* Prevents text from wrapping initially */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .table td.expandable {
+    max-width: none; /* Allow content to expand beyond 200px if necessary */
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible;
+    text-overflow: unset;
+  }
+  .table .createdAt {
+    display: none; /* Hide Created At column on smaller screens */
+  }
+ 
+  .userImage {
+    display: none; /* Hide user image on smaller screens */
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+}
