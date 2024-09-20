@@ -4,7 +4,6 @@ import { SiExpertsexchange } from "react-icons/si";
 
 const Homepage = () => {
   return (
-    <div>
     <div className={styles.container}>
       <div className={styles.textContainer}>
       <center><h1 className={styles.title}>
@@ -24,13 +23,13 @@ const Homepage = () => {
             </Link>
           </div>
         </center>
-      </div></div>
-    <div className={styles.container}>
+      </div>
+      &nbsp;&nbsp;&nbsp;
       <div className={styles.textContainer}>
       <center><h1 className={styles.title}>
       <SiExpertsexchange /></h1>
     </center>
-        <h1 className={styles.title}>FactXpert</h1><h2>User Portal </h2>
+        <h1 className={styles.title}>FactXpert</h1><h2>Admin Portal </h2>
 
         
         <p className={styles.desc}>
@@ -39,14 +38,13 @@ const Homepage = () => {
        
         <center>
           <div className={styles.newbtn}>
-            <Link href={`https://fact-xpert-quiz-portal.vercel.app`}>
+            <Link href={`/login`}>
               <button className={`${styles.btn}`}>Login</button>
             </Link>
           </div>
         </center>
       </div>
-      </div>
-      </div>
+    </div>
   );
 };
 
