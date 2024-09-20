@@ -6,10 +6,7 @@ const Homepage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-      <center><h1 className={styles.title}>
-      <SiExpertsexchange /></h1>
-    </center>
-        <h1 className={styles.title}>FactXpert</h1>
+        <h1 className={styles.title}>Fact<SiExpertsexchange />pert</h1>
 
         
         <p className={styles.desc}>
