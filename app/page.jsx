@@ -13,17 +13,18 @@ const Homepage = () => {
 
         
         <p className={styles.desc}>
-          Welcome <br />Login to Continue
+          Welcome <br />
         </p>
        
         <center>
-          <h2>Admin Portal</h2>
+          <h3>Admin Portal</h3>
           <div className={styles.newbtn}>
             <Link href={`/login`}>
               <button className={`${styles.btn}`}>Admin Login</button>
             </Link>
           </div> 
-          <h2>User Portal</h2>
+          <br />
+          <h3>User Portal</h3>
           <div className={styles.newbtn}>
             <Link href={`https://fact-xpert-quiz-portal.vercel.app/login`}>
               <button className={`${styles.btn}`}>User Login</button>
