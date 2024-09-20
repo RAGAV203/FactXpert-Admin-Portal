@@ -4,6 +4,7 @@ import { SiExpertsexchange } from "react-icons/si";
 
 const Homepage = () => {
   return (
+    <div>
     <div className={styles.container}>
       <div className={styles.textContainer}>
       <center><h1 className={styles.title}>
@@ -44,7 +45,8 @@ const Homepage = () => {
           </div>
         </center>
       </div>
-    </div>
+      </div>
+      </div>
   );
 };
 
