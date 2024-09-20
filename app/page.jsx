@@ -9,7 +9,7 @@ const Homepage = () => {
       <center><h1 className={styles.title}>
       <SiExpertsexchange /></h1>
     </center>
-        <h1 className={styles.title}>FactXpert</h1><h2>Admin Portal </h2>
+        <h1 className={styles.title}>FactXpert</h1>
 
         
         <p className={styles.desc}>
@@ -17,11 +17,13 @@ const Homepage = () => {
         </p>
        
         <center>
+          <h2>Admin Portal</h2>
           <div className={styles.newbtn}>
             <Link href={`/login`}>
               <button className={`${styles.btn}`}>Admin Login</button>
             </Link>
-          </div> &nbsp;&nbsp;&nbsp;
+          </div> 
+          <h2>User Portal</h2>
           <div className={styles.newbtn}>
             <Link href={`https://fact-xpert-quiz-portal.vercel.app/login`}>
               <button className={`${styles.btn}`}>User Login</button>
