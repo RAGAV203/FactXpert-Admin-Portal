@@ -23,7 +23,8 @@ const Homepage = () => {
             </Link>
           </div>
         </center>
-      </div>
+      </div></div>
+    <div className={styles.container}>
       <div className={styles.textContainer}>
       <center><h1 className={styles.title}>
       <SiExpertsexchange /></h1>
